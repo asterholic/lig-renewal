@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* 컨텐츠 */
+section>.cont{
+    position: relative;
+    width: 488px;
+    height: 690px;
+}
+
+section>.cont>.list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 488px;
+    height: 604px;
+}
+
+section>.cont>.list>article{
+    position: relative;
+    width: 239px;
+    height: 297px;
+    color: #fff;
+}
+
+section>.cont>.list>article#video{
+    background-color: #777;
+    background-image: url(../images/lig-cont-video_img.jpg);
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+section>.cont>.list>article#webzine{
+    background-color: #777;
+    background-image: url(../images/lig-cont-webzine_img.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+section>.cont>.list>article#story{background-color: #9ebf4a;}
+section>.cont>.list>article#ir{background-color: #ec6d1e;}
+
+section>.cont>.list>article#story:after,
+section>.cont>.list>article#video:after,
+section>.cont>.list>article#ir:after,
+section>.cont>.list>article#webzine:after{
+    display: block;
+    position: absolute;
+    left: 110px;
+    bottom: 2px;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    content: '';
+}
+
+section>.cont>.list>article#video:after{background-image: url(../images/lig-cont-video_img.png);}
+section>.cont>.list>article#webzine:after{left: 120px;bottom: 8px;background-image: url(../images/lig-cont-webzine_img.png);}
+section>.cont>.list>article#story:after{background-image: url(../images/lig-cont-story_img.png);}
+section>.cont>.list>article#ir:after{background-image: url(../images/lig-cont-ir_img.png);}
+
+section>.cont>.list>article a{color: #fff;}
+
+/* 사진 배경 들어가는 영상뉴스, 사보 제목 */
+section>.cont>.list>article>.list-headline{
+    width: 239px;
+    font-size: 24px;
+}
+
+section>.cont>.list>article>.list-headline>a{
+    display: block;
+    position: absolute;
+    width: 221px;
+    height: 277px;
+    padding-top: 20px;
+    padding-left: 18px;
+    z-index: 200;
+}
+
+section>.cont>.list>article>.list-headline>a:after{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 199px;
+    height: 167px;
+    padding-top: 130px;
+    padding-left: 40px;
+    background-image: url(../images/lig-cont-arrow_ico.png);
+    background-position: 69% 48%;
+    background-size: 16%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.2s;
+    content: '바로가기';
+}
+
+section>.cont>.list>article>.list-headline>a:hover:after{
+    background-position: 75% 48%;
+    background-size: 19%;
+    opacity: 1;
+}
+
+section>.cont>.list>article#video>.list-headline>a:hover:after{
+    background-color: rgba(21, 189, 238, 0.7);
+}
+section>.cont>.list>article#webzine>.list-headline>a:hover:after{
+    background-color: rgba(247, 168, 15, 0.7);
+}
+
+section>.cont>.list>article>.list-headline span{display: block;}
+
+section>.cont>.list>article>.list-headline .tag{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* 컨텐츠별 제목 */
+section>.cont>.list>article>.list-tit{
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    font-size: 24px;
+}
+
+/* 컨텐츠 내 게시판 */
+section>.cont>.list>article>.list-board{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position: absolute;
+    left: 18px;
+    top: 80px;
+    width: 200px;
+    height: 160px;
+    z-index: 200;
+}
+
+section>.cont>.list>article>.list-board>li{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 24px;
+    line-height: 24px;
+}
+
+section>.cont>.list>article>.list-board>li>a{
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+section>.cont>.list>article>.list-board>li:hover>a{
+    font-weight: 600;
+    font-size: 16px;
+} /* end of section */

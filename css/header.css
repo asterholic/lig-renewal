@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* 헤더 */
+header{
+    display: flex;
+    width: 100%;
+    height: 90px;
+}
+
+header>.logo{
+    width: 200px;
+    background-image: url(../images/lig-header-logo_img.gif);
+}
+
+header>.logo>a{
+    display: block;
+    height: 90px;
+    text-indent: -9999px;
+}
+
+header>.mnu{
+    width: 1000px;
+    height: 90px;
+}
+
+/* 서브메뉴 */
+header>.mnu>.sub>.submnu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 29px;
+}
+
+header>.mnu>.sub>.submnu>li{
+    margin-right: 20px;
+}
+
+header>.mnu>.sub>.submnu>li>a{
+    font-weight: 600;
+    font-size: 11px;
+}
+
+header>.mnu>.sub>.submnu>li:hover>a{color: #f8961b;}
+
+/* 메인메뉴 */
+header>.mnu>.gnb{
+    position: relative;
+}
+
+header>.mnu>.gnb>h2{height: 0;text-indent: -9999px;}
+
+header>.mnu>.gnb>.bg{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 61px;
+    width: 1000px;
+    height: 240px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+header>.mnu>.gnb>.gnbmnu{
+    display: flex;
+}
+
+header>.mnu>.gnb>.gnbmnu>li{
+    position: relative;
+    width: 143px;
+    height: 61px;
+    font-size: 18px;
+}
+
+header>.mnu>.gnb>.gnbmnu>li>a{
+    display: block;
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+}
+
+header>.mnu>.gnb>.gnbmnu>li:hover>a{
+    color: #222;
+    font-weight: 600;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1{
+    display: none;
+    position: absolute;
+    width: 143px;
+    height: 240px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li{
+    width: 139px;
+    padding: 2px;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li:first-child{
+    margin-top: 10px;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1:hover>li{
+    color: #fff;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li>a{
+    display: block;
+    height: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    text-indent: 20px;
+    transition: all 0.1s;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1:hover>li>a{
+    color: #fff;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li>a:hover{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2{
+    font-size: 12px;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li{
+    margin-bottom: 5px;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li:first-child{
+    margin-top: 7px;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li>a{
+    display: block;
+    height: 18px;
+    text-indent: 28px;
+    line-height: 18px;
+    transition: all 0.1s;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1:hover .gnbmnu-dep2>li>a{
+    color: #fff;
+}
+
+header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li>a:hover{
+    font-weight: 600;
+    font-size: 13px;
+} /* end of header */

@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* 비주얼(슬라이드, 페이지네이션) */
+section>.visual{
+    position: relative;
+    width: 702px;
+    height: 690px;
+}
+
+/* 슬라이드 */
+section>.visual>.slide{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 702px;
+    height: 604px;
+}
+
+section>.visual>.slide>.slide-container{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 702px;
+    height: 604px;
+}
+
+section>.visual>.slide>.slide-container>li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 702px;
+    background-repeat: no-repeat;
+}
+
+section>.visual>.slide>.slide-container>li.first{background-image: url(../images/lig-visual-slide_img1.jpg);}
+section>.visual>.slide>.slide-container>li.second{background-image: url(../images/lig-visual-slide_img2.jpg);}
+section>.visual>.slide>.slide-container>li.third{background-image: url(../images/lig-visual-slide_img3.jpg);}
+section>.visual>.slide>.slide-container>li.fourth{background-image: url(../images/lig-visual-slide_img4.jpg);}
+
+section>.visual>.slide>.slide-container>li>a{
+    display: block;
+    height: 604px;
+    text-indent: -9999px;
+}
+
+/* 페이지네이션 */
+section>.visual>.paging{
+    display: flex;
+    position: relative;
+    left: 45px;
+    top: 45px;
+    width: 194px;
+    height: 40px;
+}
+
+section>.visual>.paging>.paging-prev{
+    display: block;
+    width: 31px;
+    background-image: url(../images/lig-visual-paging-prev.jpg);
+    background-repeat: no-repeat;
+}
+section>.visual>.paging>.paging-prev>a{
+    display: block;
+    height: 40px;
+    text-indent: -9999px;
+}
+
+section>.visual>.paging>.paging-btn{
+    display: flex;
+}
+
+section>.visual>.paging>.paging-btn>li{
+    width: 31px;
+    background-repeat: no-repeat;
+}
+
+section>.visual>.paging>.paging-btn>li:nth-child(1){background-image: url(../images/lig-visual-paging-btn1.jpg);}
+section>.visual>.paging>.paging-btn>li:nth-child(2){background-image: url(../images/lig-visual-paging-btn2.jpg);}
+section>.visual>.paging>.paging-btn>li:nth-child(3){background-image: url(../images/lig-visual-paging-btn3.jpg);}
+section>.visual>.paging>.paging-btn>li:nth-child(4){background-image: url(../images/lig-visual-paging-btn4.jpg);}
+
+section>.visual>.paging>.paging-btn>li.on:nth-child(1){background-image: url(../images/lig-visual-paging-btn1_on.jpg);}
+section>.visual>.paging>.paging-btn>li.on:nth-child(2){background-image: url(../images/lig-visual-paging-btn2_on.jpg);}
+section>.visual>.paging>.paging-btn>li.on:nth-child(3){background-image: url(../images/lig-visual-paging-btn3_on.jpg);}
+section>.visual>.paging>.paging-btn>li.on:nth-child(4){background-image: url(../images/lig-visual-paging-btn4_on.jpg);}
+
+section>.visual>.paging>.paging-btn>li>a{
+    display: block;
+    height: 40px;
+    text-indent: -9999px;
+}
+
+section>.visual>.paging>.paging-next{
+    display: block;
+    width: 39px;
+    background-image: url(../images/lig-visual-paging-next.jpg);
+    background-repeat: no-repeat;
+}
+section>.visual>.paging>.paging-next>a{
+    display: block;
+    height: 40px;
+    text-indent: -9999px;
+}

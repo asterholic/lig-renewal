@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@import url(../css/header.css);
+@import url(../css/visual.css);
+@import url(../css/contents.css);
+@import url(../css/footer.css);
+
+body{
+    color: #666;
+    font-family: "Nanum Gothic", sans-serif, 돋움, 굴림;
+}
+
+a:link,a:hover,a:active,a:visited{color: #666;}
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 섹션 */
+section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 690px;
+    margin-top: 10px;
+}
+
+section>h2{display: none;}
