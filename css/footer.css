@@ -109,3 +109,120 @@ footer>.family>.family-desc>span{
     display: block;
     line-height: 1.8;
 } /* end of footer */
+
+/* 일반 PC */
+@media screen and (max-width:1200px){
+    footer{height: 140px;}
+
+    footer>.footlogo{top: 70px;}
+
+    footer>address.loc{top: 68px;}
+    footer>address.copyright{top: 86px;}
+
+    footer>.family>.family-category1{
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        margin-top: -7px;
+    }
+
+    footer>.family>.family-category1>li{width: 100%;}
+
+    footer>.family>.family-category1>li>span{display: none;}
+
+    footer>.family>.family-category1>li:first-child .family-category2>li:last-child{
+        padding-right: 8px;
+        border-right: 1px solid #666;
+    }
+
+    footer>.family>.family-category1>li:last-child .family-category2{left: 164px;}
+
+    footer>.family>.family-desc{
+        left: 0;
+        top: 50px;
+    }
+}
+
+/* 태블릿 */
+@media screen and (max-width:992px){
+    footer{height: 150px;}
+
+    footer>.footlogo{
+        left: 78px;
+        top: 75px;
+    }
+
+    footer>.fnb{
+        left: 260px;
+        top: 24px;
+    }
+
+    footer>.fnb>li>a{
+        display: block;
+        padding: 0 12px;
+    }
+
+    footer>.fnb>li>a:hover{font-weight: initial;}
+    
+    footer>.family{
+        left: 272px;
+        top: 109px;
+    }
+
+    footer>.family>.family-category1{margin-top: -13px;}
+
+    footer>.family>.family-category1>li:first-child .family-category2>li:last-child,
+    footer>.family>.family-category1>li .family-category2>li{border: none;}
+
+    footer>.family>.family-category1>li .family-category2{width: 300px;}
+
+    footer>.family>.family-category1>li:last-child .family-category2{left: 176px;}
+    
+    footer>.family>.family-category1>li .family-category2>li{
+        padding: 0 5px;
+    }
+
+    footer>.family>.family-category1>li .family-category2>li>a{
+        display: block;
+        padding: 6px 9px;
+        color: #fff;
+        background-color: #666;
+    }
+
+    footer>.family>.family-category1>li .family-category2>li>a:hover{font-weight: initial;}
+
+    footer>address.loc{
+        left: 272px;
+        top: 53px;
+    }
+    footer>address.copyright{
+        left: 272px;
+        top: 71px;
+    }
+
+    footer>.family>.family-desc{display: none;}
+}
+
+/* 스마트폰(~800px) */
+@media screen and (max-width:800px){
+    footer{height: 212px;}
+
+    footer>.footlogo{
+        left: 27px;
+        top: 24px;
+        margin-top: 0;
+    }
+
+    footer>.fnb{
+        left: 15px;
+        top: 86px;
+    }
+
+    footer>.fnb>li{padding: 0 5px 0 5px;}
+
+    footer>address.loc{left: 27px;top: 115px;}
+    footer>address.copyright{left: 27px;top: 133px;}
+
+    footer>.family{left: 27px;top: 171px;}
+}

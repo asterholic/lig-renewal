@@ -102,3 +102,118 @@ section>.visual>.paging>.paging-next>a{
     height: 40px;
     text-indent: -9999px;
 }
+
+/* 일반 PC */
+@media screen and (max-width:1200px){
+    section>.visual{
+        width: 560px;
+        height: 552px;
+    }
+
+    section>.visual>.slide{
+        width: 560px;
+        height: 483px;
+    }
+
+    section>.visual>.slide>.slide-container{
+        width: 560px;
+        height: 483px;
+    }
+
+    section>.visual>.slide>.slide-container>li{
+        width: 560px;
+        background-size: contain;
+    }
+
+    section>.visual>.paging{
+        left: 36px;
+        top: 36px;
+    }
+}
+
+/* 태블릿 */
+@media screen and (max-width:992px){
+    section>.visual{
+        width: 560px;
+        height: 552px;
+        margin: 0 auto;
+    }
+
+    section>.visual>.slide{
+        width: 560px;
+        height: 483px;
+    }
+
+    section>.visual>.slide>.slide-container{
+        width: 560px;
+        height: 483px;
+    }
+
+    section>.visual>.slide>.slide-container>li{
+        width: 560px;
+    }
+
+    section>.visual>.slide>.slide-container>li>a{
+        height: 483px;
+    }
+
+    section>.visual>.paging{
+        left: 32px;
+        top: 32px;
+        width: 176px;
+        height: 36px;
+    }
+
+    section>.visual>.paging>.paging-prev{
+        width: 28px;
+        background-size: contain;
+    }
+
+    section>.visual>.paging>.paging-prev>a{height: 36px;}
+
+    section>.visual>.paging>.paging-btn>li{
+        width: 28px;
+        background-size: contain;
+    }
+
+    section>.visual>.paging>.paging-btn>li>a{height: 36px;}
+
+    section>.visual>.paging>.paging-next{
+        width: 36px;
+        background-size: contain;
+    }
+
+    section>.visual>.paging>.paging-next>a{height: 36px;}
+}
+
+/* 스마트폰(~800px) */
+@media screen and (max-width:800px){
+    section>.visual{
+        width: 480px;
+        height: 473px;
+        margin: 0 auto;
+    }
+
+    section>.visual>.slide{
+        width: 480px;
+        height: 414px;
+    }
+
+    section>.visual>.slide>.slide-container{
+        width: 480px;
+        height: 414px;
+    }
+
+    section>.visual>.slide>.slide-container>li{
+        width: 480px;
+    }
+
+    section>.visual>.slide>.slide-container>li>a{
+        height: 414px;
+    }
+
+    section>.visual>.paging{
+        left: 30px;
+        top: 30px;
+    }
+}

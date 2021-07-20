@@ -42,6 +42,27 @@ header>.mnu>.sub>.submnu>li>a{
 
 header>.mnu>.sub>.submnu>li:hover>a{color: #f8961b;}
 
+/* 메뉴버튼 */
+header>.mnu>.sub>.mnubtn{
+    display: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+header>.mnu>.sub>.mnubtn>.mnubtn-top,
+header>.mnu>.sub>.mnubtn>.mnubtn-mdl,
+header>.mnu>.sub>.mnubtn>.mnubtn-btm{
+    width: 28px;
+    height: 4px;
+    margin-left: 11px;
+    margin-bottom: 4px;
+    background-color: #666;
+    border-radius: 2px;
+}
+
+header>.mnu>.sub>.mnubtn>.mnubtn-top{margin-top: 15px;}
+
 /* 메인메뉴 */
 header>.mnu>.gnb{
     position: relative;
@@ -85,6 +106,7 @@ header>.mnu>.gnb>.gnbmnu>li:hover>a{
     font-weight: 600;
 }
 
+/* 하위메뉴-1차 */
 header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1{
     display: none;
     position: absolute;
@@ -125,6 +147,7 @@ header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li>a:hover{
     font-size: 15px;
 }
 
+/* 하위메뉴-2차 */
 header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2{
     font-size: 12px;
 }
@@ -153,3 +176,254 @@ header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li>a:hover{
     font-weight: 600;
     font-size: 13px;
 } /* end of header */
+
+/* 일반 PC */
+@media screen and (max-width:1200px){
+    header>.logo{
+        width: 120px;
+        height: 80px;
+        background-size: cover;
+    }
+
+    header>.logo>a{height: 80px;}
+
+    header>.mnu{
+        width: 840px;
+        height: 80px;
+    }
+
+    header>.mnu>.sub>.submnu{height: 25px;}
+
+    header>.mnu>.gnb>.bg{top: 55px;width: 840px;}
+
+    header>.mnu>.gnb>.gnbmnu>li{
+        width: 120px;
+        height: 55px;
+        font-size: 17px;
+    }
+
+    header>.mnu>.gnb>.gnbmnu>li>a{
+        height: 55px;
+        line-height: 55px;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1{
+        width: 120px;
+        font-size: 13px;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li{width: 116px;}
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li:first-child{margin-top: 8px;}
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li>a{text-indent: 16px;}
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li>a:hover{font-size: 14px;} /* end of 1200px */
+}
+
+/* 태블릿 */
+@media screen and (max-width:992px){
+    header{
+        height: 50px;
+        border-bottom: 3px solid #aaa;
+    }
+
+    header>.logo{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 75px;
+        height: 50px;
+        margin-left: -37.5px;
+        z-index: 100;
+    }
+
+    header>.logo>a{
+        height: 50px;
+    }
+
+    header>.mnu{
+        position: relative;
+        width: 800px;
+    }
+
+    header>.mnu>.sub{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header>.mnu>.sub>.submnu{
+        justify-content: flex-start;
+        height: 50px;
+    }
+
+    header>.mnu>.sub>.submnu>li:first-child{display: none;}
+    
+    header>.mnu>.sub>.submnu>li:last-child{
+        width: 100px;
+        background-image: url(../images/lig-mnu-eng_btn.png);
+    }
+    
+    header>.mnu>.sub>.submnu>li:last-child>a{
+        display: block;
+        height: 50px;
+        text-indent: -9999px;
+    }
+
+    header>.mnu>.sub>.mnubtn{
+        display: block;
+        position: relative;
+        z-index: 1000;
+    }
+
+    header>.mnu>.sub>.mnubtn.on>.mnubtn-top{
+        position: absolute;
+        left: 20px;
+        top: 24px;
+        width: 39.6px;
+        margin-left: -14px;
+        margin-top: 0;
+        transform: rotate(45deg);
+    }
+
+    header>.mnu>.sub>.mnubtn.on>.mnubtn-mdl{
+        display: none;
+    }
+
+    header>.mnu>.sub>.mnubtn.on>.mnubtn-btm{
+        position: absolute;
+        left: 20px;
+        top: 24px;
+        width: 39.6px;
+        margin-left: -14px;
+        margin-top: 0;
+        transform: rotate(-45deg);
+    }
+
+    header>.mnu>.gnb{
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 0; /* 활성화 시 500px(태블릿), 420px(모바일) */
+        background-color: #fff;
+        border: 1px solid #666;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    header>.mnu>.gnb>h2{
+        position: absolute;
+        left: 20px;
+        height: 50px;
+        font-size: 24px;
+        line-height: 50px;
+        text-indent: 0;
+    }
+
+    header>.mnu>.gnb>.bg{
+        display: block;
+        left: 125px;
+        top: 50px;
+        width: 375px;
+        height: 726px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 350px;
+        text-align: center;
+        background-color: #a9a9a9;
+        border: none;
+    }
+
+    header>.mnu>.gnb>.gnbmnu{
+        position: absolute;
+        top: 50px;
+        flex-direction: column;
+    }
+
+    header>.mnu>.gnb>.gnbmnu>li{
+        position: initial;
+        width: 125px;
+        height: 50px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    header>.mnu>.gnb>.gnbmnu>li.on:nth-of-type(1){background-color: #15a9d6;}
+    header>.mnu>.gnb>.gnbmnu>li.on:nth-of-type(2){background-color: #eba313;}
+    header>.mnu>.gnb>.gnbmnu>li.on:nth-of-type(3){background-color: #9cbd49;}
+    header>.mnu>.gnb>.gnbmnu>li.on:nth-of-type(4){background-color: #e26a20;}
+    header>.mnu>.gnb>.gnbmnu>li.on:nth-of-type(5){background-color: #15a9d6;}
+    header>.mnu>.gnb>.gnbmnu>li.on:nth-of-type(6){background-color: #eba313;}
+    header>.mnu>.gnb>.gnbmnu>li.on:nth-of-type(7){background-color: #9cbd49;}
+
+    header>.mnu>.gnb>.gnbmnu>li>a{
+        display: block;
+        height: 50px;
+    }
+
+    header>.mnu>.gnb>.gnbmnu>li.on>a,
+    header>.mnu>.gnb>.gnbmnu>li.on:hover>a{color: #fff;}
+
+    header>.mnu>.gnb>.gnbmnu>li:hover>a{
+        color: #666;
+        font-weight: initial;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1{
+        display: none;
+        left: 125px;
+        top: 0;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1.on{display: block;}
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li{
+        width: 375px;
+        padding: 0;
+        border-bottom: 1px dashed #ccc9;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li:first-child{margin: 0;}
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li>a{
+        height: 50px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 50px;
+        text-indent: 30px;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1:hover>li>a,
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep1>li>a:hover{
+        font-weight: initial;
+        font-size: initial;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2{font-size: 16px;}
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li{
+        height: 50px;
+        margin-bottom: 0;
+        border-top: 1px dashed #ccc9;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li:first-child{margin: 0;}
+    
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li>a{
+        height: 50px;
+        color: #fff;
+        line-height: 50px;
+        text-indent: 50px;
+    }
+
+    header>.mnu>.gnb>.gnbmnu .gnbmnu-dep2>li>a:hover{
+        font-weight: initial;
+        font-size: initial;
+    }
+}
+
+/* 스마트폰(~800px) */
+@media screen and (max-width:800px){
+    header>.mnu>.gnb>.bg{width: 295px;}
+}

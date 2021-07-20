@@ -94,7 +94,7 @@ section>.cont>.list>article>.list-headline>a:after{
     padding-top: 130px;
     padding-left: 40px;
     background-image: url(../images/lig-cont-arrow_ico.png);
-    background-position: 69% 48%;
+    background-position: 69% 49%;
     background-size: 16%;
     background-repeat: no-repeat;
     opacity: 0;
@@ -103,7 +103,7 @@ section>.cont>.list>article>.list-headline>a:after{
 }
 
 section>.cont>.list>article>.list-headline>a:hover:after{
-    background-position: 75% 48%;
+    background-position: 75% 49%;
     background-size: 19%;
     opacity: 1;
 }
@@ -160,3 +160,236 @@ section>.cont>.list>article>.list-board>li:hover>a{
     font-weight: 600;
     font-size: 16px;
 } /* end of section */
+
+/* 일반 PC */
+@media screen and (max-width:1200px){
+    section>.cont{
+        width: 390px;
+        height: 552px;
+    }
+
+    section>.cont>.list{
+        width: 390px;
+        height: 483px;
+    }
+
+    section>.cont>.list>article{
+        width: 191px;
+        height: 238px;
+    }
+
+    section>.cont>.list>article#story:after,
+    section>.cont>.list>article#video:after,
+    section>.cont>.list>article#ir:after,
+    section>.cont>.list>article#webzine:after{
+        left: 88px;
+        bottom: 2px;
+        width: 96px;
+        height: 96px;
+    }
+
+    section>.cont>.list>article>.list-headline{
+        width: 191px;
+        font-size: 20px;
+    }
+
+    section>.cont>.list>article>.list-headline>a{
+        width: 177px;
+        height: 222px;
+        padding-top: 16px;
+        padding-left: 14px;
+        font-size: 24px;
+    }
+
+    section>.cont>.list>article>.list-headline>a:after{
+        width: 159px;
+        height: 134px;
+        padding-top: 104px;
+        padding-left: 32px;
+        background-position: 76% 50%;
+        background-size: 17%;
+    }
+
+    section>.cont>.list>article>.list-headline>a:hover:after{
+        background-position: 82% 50%;
+        background-size: 18%;
+    }
+
+    section>.cont>.list>article>.list-headline .tag{font-size: 14px;}
+
+    section>.cont>.list>article>.list-tit{
+        left: 15px;
+        top: 16px;
+        font-size: 20px;
+    }
+
+    section>.cont>.list>article>.list-board{
+        left: 15px;
+        top: 64px;
+        width: 168px;
+        height: 140px;
+    }
+}
+
+/* 태블릿 */
+@media screen and (max-width:992px){
+    section>.cont{
+        width: 770px;
+        height: 510px;
+        margin: 20px auto;
+    }
+
+    section>.cont>.list{
+        width: 770px;
+        height: 510px;
+    }
+
+    section>.cont>.list>article{
+        width: 380px;
+        height: 250px;
+    }
+
+    section>.cont>.list>article#video,
+    section>.cont>.list>article#webzine{
+        background-position: 50% 50%;
+    }
+
+    section>.cont>.list>article#story:after,
+    section>.cont>.list>article#video:after,
+    section>.cont>.list>article#ir:after,
+    section>.cont>.list>article#webzine:after{
+        left: 244px;
+        bottom: 10px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    section>.cont>.list>article>.list-headline>a{
+        width: 362px;
+        height: 234px;
+        padding-top: 16px;
+        padding-left: 18px;
+    }
+    
+    section>.cont>.list>article>.list-headline>a:after{
+        width: 362px;
+        height: 234px;
+        padding-top: 16px;
+        padding-left: 18px;
+        background-position: 5% 58%;
+        background-size: 12%;
+        transition: none;
+        content: '';
+    }
+
+    section>.cont>.list>article>.list-headline>a:hover:after{
+        background-position: 7% 58%;
+        background-size: 13%;
+    }
+
+    section>.cont>.list>article>.list-tit{font-size: 24px;}
+
+    section>.cont>.list>article>.list-headline .tag{
+        font-size: 18px;
+    }
+
+    section>.cont>.list>article>.list-board{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        position: absolute;
+        left: 18px;
+        top: 58px;
+        height: 180px;
+        z-index: 200;
+    }
+    
+    section>.cont>.list>article>.list-board>li{
+        width: 240px;
+        height: 36px;
+        border-bottom: 1px dashed #fffa;
+    }
+
+    section>.cont>.list>article>.list-board>li:last-child{border-bottom: none;}
+
+    section>.cont>.list>article>.list-board>li>a{
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 36px;
+        font-size: 17px;
+        line-height: 36px;
+        transition: none;
+    }
+    
+    section>.cont>.list>article>.list-board>li:hover>a{
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+/* 스마트폰(~800px) */
+@media screen and (max-width:800px){
+    section>.cont{
+        height: 510px;
+    }
+
+    section>.cont>.list{
+        top: 0;
+        height: 510px;
+    }
+
+    section>.cont>.list>article{
+        height: 250px;
+    }
+
+    section>.cont>.list>article:nth-of-type(2),
+    section>.cont>.list>article:nth-of-type(4){margin-right: 0;}
+
+    section>.cont>.list>article#story:after,
+    section>.cont>.list>article#video:after,
+    section>.cont>.list>article#ir:after,
+    section>.cont>.list>article#webzine:after{
+        left: initial;
+        right: 15px;
+        bottom: 10px;
+        width: 90px;
+        height: 90px;
+    }
+
+    section>.cont>.list>article>.list-headline>a{
+        height: 250px;
+        padding: none;
+    }
+    
+    section>.cont>.list>article>.list-headline>a:after{
+        width: 100%;
+        height: 250px;
+        padding: 0;
+        background-position: 5% 58%;
+        background-size: 15%;
+        transition: none;
+        content: '';
+    }
+
+    section>.cont>.list>article>.list-board>li>a{
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 36px;
+        font-size: 16px;
+        line-height: 36px;
+    }
+    
+    section>.cont>.list>article>.list-board>li:hover>a{
+        font-weight: 600;
+        font-size: 17px;
+    }
+}
+
+/* 모바일(~480px) */
+@media screen and (max-width:480px){
+
+}

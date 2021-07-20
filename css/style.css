@@ -15,6 +15,7 @@ body{
 a:link,a:hover,a:active,a:visited{color: #666;}
 
 #wrap{
+    overflow-x: hidden;
     width: 1200px;
     margin: 0 auto;
 }
@@ -29,3 +30,38 @@ section{
 }
 
 section>h2{display: none;}
+
+/* 일반 PC */
+@media screen and (max-width:1200px){
+    #wrap{
+        width: 960px;
+    }
+
+    section{height: 552px;}
+}
+
+/* 태블릿 */
+@media screen and (max-width:992px){
+    body{background-color: #ababab;}
+
+    #wrap{
+        position: relative;
+        width: 800px;
+        background-color: #fff;
+    }
+
+    section{
+        display: block;
+        height: 1077px;
+        margin-top: 0;
+    }
+}
+
+/* 스마트폰(~800px) */
+@media screen and (max-width:800px){
+    #wrap{
+        width: 100%;
+    }
+
+    section{height: 998px;}
+}
